@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+}
+.app {
+  background: url("https://i.stack.imgur.com/pRumE.png") no-repeat top center;
+}
+.main {
+  align-items: flex-start;
+  flex-direction: row;
+  min-height: calc(100vh - 8rem);
+}
+
+.app-header {
+  font: "Nunito", sans-serif;
+  position: static;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #922b21; /* #161a2b;*/
+  color: white;
+  width: 100%;
+  font-weight: 700;
+  height: 4rem;
+  padding: 0rem 0.5rem;
+  font-size: 1rem;
+}
+.app-logo {
+  margin: 0rem 2rem;
+  height: 4rem;
+}
+.app-btn {
+  margin: 0.8rem;
+  padding: 16px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 12, 0.993) 0%,
+    rgb(250, 71, 0) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+.app-footer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+
+  background-color: #922b21;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  height: 2rem;
+  padding: 8px 10px;
+  font-size: 1rem;
+}

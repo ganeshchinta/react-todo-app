@@ -1,0 +1,21 @@
+.show-buckets {
+  text-align: right;
+}
+.show-bucket-button {
+  margin-top: 2rem;
+  margin-right: 2rem;
+
+  padding: 16px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg, rgb(28, 12, 255) 0%, rgb(87, 0, 250) 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.show-bucket {
+  float: left;
+  width: 25%;
+}
