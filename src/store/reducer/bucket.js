@@ -7,6 +7,9 @@ const initialState = {
 const createBucket = (state, action) => {
   return updateObject(state, { buckets: state.buckets.concat(action.bucket) });
 };
+const clearBucket = (state, action) => {
+  return updateObject(state, { buckets: [] });
+};
 
 const addTodo = (state, action) => {
   const bucketIndex = state.buckets.findIndex(
@@ -106,6 +109,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.CREATE_BUCKET:
       return createBucket(state, action);
+    case actionTypes.CLEAR_BUCKET:
+      return clearBucket(state, action);
     case actionTypes.ADD_TODO:
       return addTodo(state, action);
     case actionTypes.UPDATE_TODO:

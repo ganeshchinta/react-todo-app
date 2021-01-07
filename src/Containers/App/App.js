@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import ShowBuckets from "../../Containers/ShowBuckets/ShowBuckets";
 import CreateBucket from "../../Components/CreateBucket/CreateBucket";
 import * as actions from "../../store/actions/user";
+import * as bucketActions from "../../store/actions/buckets";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
 
@@ -76,7 +77,10 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    OnSignOutHandler: () => dispatch(actions.signOutUser()),
+    OnSignOutHandler: () => {
+      dispatch(actions.signOutUser());
+      dispatch(bucketActions.clearBucket());
+    },
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(App);

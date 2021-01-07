@@ -12,6 +12,7 @@ const signInUser = (state, action) => {
   });
 };
 const signOutUser = (state, action) => {
+  console.log("Signout", state);
   return updateObject(state, { user: null, autheticated: false });
 };
 const signUpUser = (state, action) => {

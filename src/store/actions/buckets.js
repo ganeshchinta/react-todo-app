@@ -8,7 +8,11 @@ export const addBucketSuccess = (bucket) => {
     bucket: bucket,
   };
 };
-
+export const clearBucket = () => {
+  return {
+    type: actionTypes.CLEAR_BUCKET,
+  };
+};
 export const addBucket = (bucketTitle) => {
   const data = { bucketTitle: bucketTitle };
   return (dispatch) => {

@@ -1,5 +1,5 @@
 export const CREATE_BUCKET = "CREATE_BUCKET";
-
+export const CLEAR_BUCKET = "CLEAR_BUCKET";
 export const ADD_TODO = "ADD_TODO";
 export const UPDATE_TODO = "UPDATE_TODO";
 export const DELETE_TODO = "DELETE_TODO";

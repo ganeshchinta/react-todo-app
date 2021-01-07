@@ -2,7 +2,7 @@
   margin: 0px;
 }
 .app {
-  background: url("https://i.stack.imgur.com/pRumE.png") no-repeat top center;
+  background: url("https://i.stack.imgur.com/pRumE.png") top center;
 }
 .main {
   align-items: flex-start;
